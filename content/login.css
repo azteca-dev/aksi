@@ -1,0 +1,75 @@
+﻿body {
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+.jumbotron {
+    padding-top: 48px;
+    padding-bottom: 170px !important;
+    background-color:#0097A7;
+    color:#FFF;
+    
+}
+
+.block-login
+{
+    border:1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    position:relative;
+    max-width:400px;
+    margin:-180px auto 0px auto;
+    background-color: #FFF;
+    padding:15px;
+}
+
+.title_login
+{
+    text-align:center !important;
+    margin:1px;
+}
+.box_login
+{
+    margin-top:20px;
+}
+.error_message_login
+{
+    color:#F44336;
+    text-align:center;
+}

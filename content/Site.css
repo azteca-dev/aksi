@@ -1,0 +1,618 @@
+﻿
+/************* para el dashboard/
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+
+.modal-lg {
+    width: 1100px;
+}
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+    width: 50px !important;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+    padding-top: 30px;
+    padding-left: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 0px;
+    padding-left: 75px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
+
+/*****************/
+
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    max-width: 1320px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.logo{
+    margin-left:100px;
+    margin-top: -12px;
+}
+.array_pictures{
+
+   margin-left:100px;
+
+}
+
+.array_pictures input div{
+
+    display: inline-block;
+
+}
+.custom-input-file {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color:#CCC;
+    background-image:-webkit-linear-gradient(top, #CCC, #CCC);
+    border:1px solid #F1F1F1;
+    width: 130px;
+    height: 100px;
+
+}
+.custom-input-file .input-file {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-size: 10000px;
+    border: 10000px solid transparent;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    position: absolute;
+    right: -1000px;
+    top: -1000px;
+    cursor: pointer;
+
+}
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 130px;
+    height: 100px;
+    border:1px solid #EEE;
+    color:#FFF;
+    border-bottom-left-radius:2px;
+    border-bottom-right-radius:2px;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+}
+
+
+
+.btn_foto
+{
+    background-color:#EEE;
+   /* background-image:url('../Images/pic_upload.png');*/
+    border:1px solid #EEE;
+    color:#000;
+    border-bottom-left-radius:2px;
+    border-bottom-right-radius:2px;
+    border-top-left-radius:2px;
+    border-top-right-radius:2px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    height:24px;
+    line-height:27px;
+    margin-right:15px;
+    margin-top:15px;
+    margin-left:20px;
+    min-width:54px;
+    outline:0;
+    padding:0px;
+    text-align:center;
+    /*white-space:nowrap;*/
+    display:inline-block;
+    position:relative;
+    width: 150px;
+    height: 150px;
+}
+
+.fileUpload .thumb{
+
+    height: 150px;
+    width: 150px;
+    min-width:54px;
+
+}
+
+.fileUpload .thumb_loading{
+
+    height: 150px;
+    width: 150px;
+    min-width:54px;
+    background-image:url('../Images/loading_picture.gif');
+
+}
+
+.data_value{
+    display:inline-block;
+    margin-right: 25px;
+}
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  }
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: pointer !important;
+    display: block;
+}
+
+
+input[type='file'] {
+    color: transparent !important;
+    
+}
+
+
+/******************** INI-Estilos para la seleccion de seccion *************************************************/
+.mainSelectSection{
+    width:100%;
+    border:0px solid red;
+    background-color:azure;
+    padding:10px;
+}
+
+.mainSelectSection .takeoverSection{
+    margin-right:30px;
+    width:200px;
+    height:30px;
+    background-color:#F1F1F1;
+    border:1px solid #808080;
+    cursor: pointer;
+    margin-top:3px;
+    position:relative;
+    text-align: center;
+}
+.takeoverSection:hover{
+    background-color:#808080;
+    color:#FFF;
+    font-weight:bold;
+}
+
+.mainSelectSection .sliderSection{
+    margin-top:10px;
+    width:100%;
+    height:60px;
+    background-color:#F1F1F1;
+    border:1px solid #808080;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sliderSection:hover{
+    background-color:#808080;
+    color:#FFF;
+    font-weight:bold;
+}
+
+.mainSelectSection .noticiasSection div{
+    width:30%;
+    height:100px;
+    background-color:#F1F1F1;
+    border:1px solid #808080;
+    cursor: pointer;
+    margin-top:10px;
+    margin-left:20px;
+    text-align: center;
+    display:inline-block;
+}
+.noticiasSection div:hover{
+    background-color:#808080;
+    color:#FFF;
+    font-weight:bold;
+}
+
+.mainSelectSection .bannerSection{
+    margin-top:10px;
+    width:100%;
+    height:100px;
+    background-color:#F1F1F1;
+    border:1px solid #808080;
+    cursor: pointer;
+    text-align: center;
+}
+
+.bannerSection:hover{
+    background-color:#808080;
+    color:#FFF;
+    font-weight:bold;
+}
+
+
+/******************** FIN-Estilos para la seleccion de seccion *************************************************/
+/******************** FIN-Estilos para el detalle del banner *************************************************/
+
+.detailBannerContent .detailBannerCol{
+    display:inline-block;
+}
+.detailBannerCol{
+    vertical-align:top;
+    padding:10px;
+    margin-left:15px;
+}
+.detailBannerCol span{
+    font-weight:bold;
+    color:#000;
+}
+.detailBannerImage{
+    width:400px;
+    height:400px;
+    margin:5px;
+    background-color:#808080;
+}
+.detailBannerMain{
+    margin:2px;
+}
+.detailBannerActions{
+    margin-top:20px;
+}
+.detailBannerTitle{
+    margin-left:70px;
+}
+
+/******************** FIN-Estilos para la detalle del banner *************************************************/
+
+/*********************** ESTILOS DASHBOARD TONATIUH ********************************************************/
+.reportes
+{
+    font-family: Arial;
+    font-size:11px !important;
+}
+.img_loader
+{
+    width:600px;
+    margin:0 auto 0 auto;
+    border: 0px solid #CCC;
+}
+.reporteExcelLink
+{
+    margin-left:20px;
+}
+.box-search
+{
+    width:200px !important;
+}
+.form-group label
+{
+    font-size:12px !important;
+    font-weight:normal !important;
+}
+.dn-title
+{
+    font-weight:bold;
+    color:#428BCA;
+}
+.dn-total
+{
+    font-size:16px !important;
+    font-weight:bold !important;
+}
+
+#logo{
+	padding: 15px 0px 0px 80px;
+    margin: 0px;
+    background-image: url("../Images/logo-marti-digital.png");
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 50px;
+    font-size: 30px;
+    color: #FFF;
+}
+
+.label_indicator_home
+{
+    margin-top:40px !important;
+}
+.indicator_home
+{
+    margin-top:5px;    
+    color:#2E7D32;
+    font-size:70px !important;
+    font-weight:bold;
+}
+
+.total_report
+{
+    font-size: 15px !important;
+    color: #1E88E5;
+    margin-top: 15px;
+}
+
+.listProd-title
+{
+    font-size:15px;
+    color:#0D47A1;
+}
+
+.listProd-title-master
+{
+    font-size:20px;
+    color:#0D47A1;
+}
+
+.listProd-category-title-master
+{
+    font-size:20px;
+    color:#43A047;
+}
+
+.custom-margin
+{
+    padding:40px !important;
+}
+.cstom-encabezado-edit-skus
+{
+    margin-bottom:80px !important;
+}
+.custom-modal-lg
+{
+    width:1200px !important;
+}
+
+.ta-editor {
+  min-height: 300px;
+  height: auto;
+  overflow: auto;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+.date_semaforo_red
+{
+    color:#FF3D00;
+    font-size:10px;
+}
+
+.date_semaforo_ambar
+{
+    color:#F57C00;
+    font-size:10px;
+}
+
+.date_semaforo_green
+{
+    color:#388E3C;
+    font-size:10px;
+}
+
+/*********************************** Inicio - Estilos para el custom variation *********************************************/
+#CV-search-item-main
+{
+    display: inline-flex;
+    margin: 6px auto 10px 100px;
+}
+#CV-search-item-main input 
+{
+    margin-right:20px;
+}
+#CV-find-item-main div 
+{
+    display:inline-flex;
+}
+#CV-find-item-main div span
+{
+    display:block;
+}
+
+
+#CV-find-item-main .CV-mlmid
+{
+    font-size:12px;
+    color: #CCC;
+}
+.CV-message 
+{
+    text-align:center;
+}
+
+#CV-loader-gif img
+{
+    text-align: center;
+    width: 400px;
+    margin: 0 auto 0 75px;
+}
+
+/*********************************** Fin - Estilos para el custom variation ***********************************************/
+
+
+:root {
+  --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+  padding-top: var(--jumbotron-padding-y);
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: calc(var(--jumbotron-padding-y) * 2);
+    padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+
+
+.text_box_search{
+    max-width: 780px;
+    height: 50px !important;
+    margin:10px !important;
+    font-size: 18px !important;
+    font-weight: bold;
+}
